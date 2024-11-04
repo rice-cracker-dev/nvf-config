@@ -8,7 +8,7 @@
     nixpkgs,
     nvf,
     ...
-  }: let
+  } @ inputs: let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
     configModule = import ./configuration.nix;
@@ -21,6 +21,6 @@
     # this will make the package available as a flake input
     packages.${system}.default = customNeovim.neovim;
 
-    homeManagerModules.default = import ./hm.nix;
+    homeManagerModules.default = import ./hm.nix inputs;
   };
 }
