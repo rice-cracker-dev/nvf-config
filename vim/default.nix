@@ -7,6 +7,7 @@
     ./git.nix
     ./languages.nix
     ./lsp.nix
+    ./theme.nix
     ./treesitter.nix
     ./ui.nix
     ./utility.nix
