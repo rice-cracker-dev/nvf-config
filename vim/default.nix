@@ -23,10 +23,15 @@
     useSystemClipboard = true;
     viAlias = true;
     vimAlias = true;
+    preventJunkFiles = true;
 
     autopairs.enable = true;
-    telescope.enable = true;
     undoFile.enable = true;
+    notify.nvim-notify.enable = true;
+    presence.neocord.enable = true;
+    projects.project-nvim.enable = true;
+    snippets.vsnip.enable = true;
+    telescope.enable = true;
 
     binds = {
       cheatsheet.enable = true;
@@ -36,6 +41,26 @@
     dashboard = {
       dashboard-nvim.enable = false;
       alpha.enable = true;
+    };
+
+    statusline.lualine = {
+      enable = true;
+      globalStatus = true;
+      icons.enable = true;
+    };
+
+    tabline.nvimBufferline = {
+      enable = true;
+
+      mappings = {
+        cycleNext = "<leader>e";
+        cyclePrevious = "<leader>q";
+      };
+    };
+
+    terminal.toggleterm = {
+      enable = true;
+      lazygit.enable = true;
     };
   };
 }

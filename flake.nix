@@ -5,6 +5,7 @@
   };
 
   outputs = {
+    self,
     nixpkgs,
     nvf,
     ...
@@ -20,5 +21,7 @@
   in {
     # this will make the package available as a flake input
     packages.${system}.default = customNeovim.neovim;
+
+    homeManagerModules.default = import ./hm.nix self;
   };
 }
