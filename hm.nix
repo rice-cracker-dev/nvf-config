@@ -11,7 +11,7 @@
   inherit (inputs.nvf.lib.nvim) neovimConfiguration;
   inherit (inputs.nvf.lib.nvim.types) anythingConcatLists;
 
-  cfg = config;
+  cfg = config.programs.nvf-config;
   nvfConfig = cfg.settings;
   configModule = import ./configuration.nix;
 
@@ -20,7 +20,7 @@
     modules = [configModule nvfConfig];
   };
 in {
-  options = {
+  options.programs.nvf-config = {
     enable = mkEnableOption "nvf-config";
 
     settings = mkOption {
