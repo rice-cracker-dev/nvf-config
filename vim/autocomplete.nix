@@ -1,13 +1,7 @@
 {
-  config.vim.autocomplete = {
+  config.vim.autocomplete.nvim-cmp = {
     enable = true;
     alwaysComplete = true;
-
-    sources = {
-      nvim_lsp = "[LSP]";
-      path = "[Path]";
-      buffer = "[Buffer]";
-    };
 
     mappings = {
       close = "<C-e>"; # ctrl-e

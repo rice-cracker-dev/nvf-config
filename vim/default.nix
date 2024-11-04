@@ -26,12 +26,12 @@
     vimAlias = true;
     preventJunkFiles = true;
 
-    autopairs.enable = true;
+    #autopairs.enable = true;
     undoFile.enable = true;
     notify.nvim-notify.enable = true;
     presence.neocord.enable = true;
     projects.project-nvim.enable = true;
-    snippets.vsnip.enable = true;
+    #snippets.vsnip.enable = true;
     telescope.enable = true;
 
     binds = {
