@@ -1,5 +1,5 @@
 {
-  config.vim.autocomplete.nvim-cmp = {
+  config.vim.autocomplete = {
     enable = true;
     alwaysComplete = true;
 
