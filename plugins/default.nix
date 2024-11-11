@@ -1,3 +1,3 @@
 {
-  imports = [./direnv.nix];
+  imports = [./direnv.nix ./projectconfig.nix];
 }

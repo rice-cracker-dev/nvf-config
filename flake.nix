@@ -2,6 +2,11 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nvf.url = "github:notashelf/nvf";
+
+    nvim-projectconfig = {
+      url = "github:windwp/nvim-projectconfig";
+      flake = false;
+    };
   };
 
   outputs = {
@@ -11,6 +16,7 @@
   }: let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
+
     configModule = import ./configuration.nix;
 
     customNeovim = nvf.lib.neovimConfiguration {
