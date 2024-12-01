@@ -1,3 +1,7 @@
 {
-  imports = [./direnv.nix ./projectconfig.nix];
+  imports = [
+    ./direnv.nix
+    ./nvim-dap-python.nix
+    ./projectconfig.nix
+  ];
 }
