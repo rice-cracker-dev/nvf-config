@@ -4,6 +4,7 @@
     ./comment.nix
     ./debugger.nix
     ./filetree.nix
+    ./filetypes.nix
     ./git.nix
     ./languages.nix
     ./lsp.nix
