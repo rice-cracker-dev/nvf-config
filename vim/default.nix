@@ -27,12 +27,6 @@
     vimAlias = true;
     preventJunkFiles = true;
 
-    luaConfigRC.tabWidth = ''
-      vim.opt.tabstop = 4
-      vim.opt.shiftwidth = 4
-      vim.opt.expandtab = true
-    '';
-
     #autopairs.enable = true;
     undoFile.enable = true;
     notify.nvim-notify.enable = true;
