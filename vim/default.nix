@@ -8,6 +8,7 @@
     ./git.nix
     ./languages.nix
     ./lsp.nix
+    ./lspconfig.nix
     ./theme.nix
     ./treesitter.nix
     ./ui.nix
@@ -16,11 +17,8 @@
   ];
 
   config.vim = {
-    enableEditorconfig = true;
     enableLuaLoader = true;
-    autoIndent = true;
     syntaxHighlighting = true;
-    tabWidth = 2;
     lineNumberMode = "number";
     useSystemClipboard = true;
     viAlias = true;
@@ -34,6 +32,15 @@
     projects.project-nvim.enable = true;
     #snippets.vsnip.enable = true;
     telescope.enable = true;
+    globals.editorconfig = true;
+
+    options = {
+      tabstop = 2;
+      shiftwidth = 2;
+      expandtab = true;
+
+      autoindent = true;
+    };
 
     binds = {
       cheatsheet.enable = true;

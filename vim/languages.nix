@@ -7,6 +7,14 @@
     enableTreesitter = true;
 
     # langauges
+    astro = {
+      enable = true;
+      extraDiagnostics.enable = true;
+      format.enable = true;
+      lsp.enable = true;
+      treesitter.enable = true;
+    };
+
     bash = {
       enable = true;
       extraDiagnostics.enable = true;
@@ -40,7 +48,7 @@
     lua = {
       enable = true;
       lsp.enable = true;
-      lsp.neodev.enable = true;
+      lsp.lazydev.enable = true;
       treesitter.enable = true;
     };
 

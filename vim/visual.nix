@@ -1,9 +1,8 @@
 {
   config.vim.visuals = {
-    enable = true;
-    cursorline.enable = true;
+    nvim-cursorline.enable = true;
     fidget-nvim.enable = true;
-    indentBlankline.enable = true;
-    nvimWebDevicons.enable = true;
+    indent-blankline.enable = true;
+    nvim-web-devicons.enable = true;
   };
 }

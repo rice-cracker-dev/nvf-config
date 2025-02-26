@@ -1,7 +1,6 @@
 {
-  config.vim.autocomplete = {
+  config.vim.autocomplete.nvim-cmp = {
     enable = true;
-    alwaysComplete = true;
 
     mappings = {
       close = "<C-e>"; # ctrl-e
