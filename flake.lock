@@ -165,27 +165,10 @@
         "type": "github"
       }
     },
-    "nvim-projectconfig": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1722166782,
-        "narHash": "sha256-wIoUu7hxaWVR2zDqK02tYQ3rX4X2oqO0k8zXUSjOLzA=",
-        "owner": "windwp",
-        "repo": "nvim-projectconfig",
-        "rev": "db11fd7d51f7180ede292a7584eb62bb48f91863",
-        "type": "github"
-      },
-      "original": {
-        "owner": "windwp",
-        "repo": "nvim-projectconfig",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
-        "nvf": "nvf",
-        "nvim-projectconfig": "nvim-projectconfig"
+        "nvf": "nvf"
       }
     },
     "rust-overlay": {

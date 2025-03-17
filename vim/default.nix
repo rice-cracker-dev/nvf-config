@@ -38,6 +38,8 @@
       expandtab = true;
 
       autoindent = true;
+
+      mouse = ""; # disable mouse
     };
 
     autopairs.nvim-autopairs = {
