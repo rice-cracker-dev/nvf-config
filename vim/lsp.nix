@@ -3,8 +3,8 @@
     enable = true;
     formatOnSave = false;
 
+    lspsaga.enable = true;
     lightbulb.enable = true;
-    lspSignature.enable = true;
     lspconfig.enable = true;
     lsplines.enable = true;
     nvim-docs-view.enable = true;

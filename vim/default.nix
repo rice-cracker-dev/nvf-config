@@ -19,18 +19,16 @@
   config.vim = {
     enableLuaLoader = true;
     syntaxHighlighting = true;
-    lineNumberMode = "number";
+    lineNumberMode = "relNumber";
     useSystemClipboard = true;
     viAlias = true;
     vimAlias = true;
     preventJunkFiles = true;
 
-    #autopairs.enable = true;
     undoFile.enable = true;
     notify.nvim-notify.enable = true;
     presence.neocord.enable = true;
     projects.project-nvim.enable = true;
-    #snippets.vsnip.enable = true;
     telescope.enable = true;
     globals.editorconfig = true;
 
@@ -40,6 +38,10 @@
       expandtab = true;
 
       autoindent = true;
+    };
+
+    autopairs.nvim-autopairs = {
+      enable = true;
     };
 
     binds = {
