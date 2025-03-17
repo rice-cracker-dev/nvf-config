@@ -1,7 +1,7 @@
 {
   config.vim = {
     filetree.nvimTree = {
-      enable = true;
+      enable = false;
 
       mappings = {
         toggle = "<C-n>";

@@ -51,7 +51,7 @@
 
     dashboard = {
       dashboard-nvim.enable = false;
-      alpha.enable = true;
+      alpha.enable = false;
     };
 
     statusline.lualine = {
@@ -61,7 +61,7 @@
     };
 
     tabline.nvimBufferline = {
-      enable = true;
+      enable = false;
 
       mappings = {
         cycleNext = "<leader>e";
@@ -70,7 +70,7 @@
     };
 
     terminal.toggleterm = {
-      enable = true;
+      enable = false;
       lazygit.enable = true;
     };
   };
