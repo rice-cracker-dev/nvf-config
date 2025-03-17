@@ -3,7 +3,7 @@
     enable = true;
     formatOnSave = false;
 
-    lspsaga.enable = true;
+    # lspsaga.enable = true; # BUGGY!
     lightbulb.enable = true;
     lspconfig.enable = true;
     lsplines.enable = true;
