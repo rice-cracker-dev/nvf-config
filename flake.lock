@@ -151,24 +151,41 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1742232393,
-        "narHash": "sha256-EupmLCkrJrwu50Epo68JLSq/VkdBonOMQk0ehiHJjhg=",
+        "lastModified": 1742157427,
+        "narHash": "sha256-ongHu4JHnZ0vbu9cXoCYshfmgFWrduN3bqnTzooLJII=",
         "owner": "NotAShelf",
         "repo": "nvf",
-        "rev": "0367f490ba978597c979d973098dd795be8bb30d",
+        "rev": "1d7c27abd97f4532acd9710dd2d7db439ddfe69a",
         "type": "github"
       },
       "original": {
         "owner": "NotAShelf",
         "repo": "nvf",
-        "rev": "0367f490ba978597c979d973098dd795be8bb30d",
+        "rev": "1d7c27abd97f4532acd9710dd2d7db439ddfe69a",
+        "type": "github"
+      }
+    },
+    "nvim-projectconfig": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1722166782,
+        "narHash": "sha256-wIoUu7hxaWVR2zDqK02tYQ3rX4X2oqO0k8zXUSjOLzA=",
+        "owner": "windwp",
+        "repo": "nvim-projectconfig",
+        "rev": "db11fd7d51f7180ede292a7584eb62bb48f91863",
+        "type": "github"
+      },
+      "original": {
+        "owner": "windwp",
+        "repo": "nvim-projectconfig",
         "type": "github"
       }
     },
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
-        "nvf": "nvf"
+        "nvf": "nvf",
+        "nvim-projectconfig": "nvim-projectconfig"
       }
     },
     "rust-overlay": {
