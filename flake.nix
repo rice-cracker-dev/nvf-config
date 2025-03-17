@@ -1,12 +1,7 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nvf.url = "github:NotAShelf/nvf/1d7c27abd97f4532acd9710dd2d7db439ddfe69a";
-
-    nvim-projectconfig = {
-      url = "github:windwp/nvim-projectconfig";
-      flake = false;
-    };
+    nvf.url = "github:NotAShelf/nvf/0367f490ba978597c979d973098dd795be8bb30d";
   };
 
   outputs = {
