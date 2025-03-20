@@ -9,6 +9,7 @@
     ./languages.nix
     ./lsp.nix
     ./lspconfig.nix
+    ./telescope.nix
     ./theme.nix
     ./treesitter.nix
     ./ui.nix
@@ -29,7 +30,6 @@
     notify.nvim-notify.enable = true;
     presence.neocord.enable = true;
     projects.project-nvim.enable = true;
-    telescope.enable = true;
     globals.editorconfig = true;
 
     options = {
