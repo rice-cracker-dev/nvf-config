@@ -72,8 +72,9 @@
     };
 
     terminal.toggleterm = {
-      enable = false;
+      enable = true;
       lazygit.enable = true;
+      setupOpts.direction = "float";
     };
   };
 }
