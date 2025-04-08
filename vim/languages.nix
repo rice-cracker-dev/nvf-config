@@ -10,7 +10,6 @@
     astro = {
       enable = true;
       extraDiagnostics.enable = true;
-      format.enable = true;
       lsp.enable = true;
       treesitter.enable = true;
     };
@@ -33,8 +32,6 @@
 
     css = {
       enable = true;
-      format.enable = true;
-      format.type = "prettierd";
       lsp.enable = true;
       treesitter.enable = true;
     };
@@ -54,7 +51,6 @@
 
     markdown = {
       enable = true;
-      format.enable = true;
       lsp.enable = true;
       treesitter.enable = true;
     };
@@ -62,7 +58,6 @@
     nix = {
       enable = true;
       extraDiagnostics.enable = true;
-      format.enable = true;
       lsp.enable = true;
       treesitter.enable = true;
     };
@@ -99,7 +94,6 @@
     svelte = {
       enable = true;
       extraDiagnostics.enable = true;
-      format.enable = true;
       lsp.enable = true;
       treesitter.enable = true;
     };
@@ -113,8 +107,6 @@
       enable = true;
       extensions.ts-error-translator.enable = true;
       extraDiagnostics.enable = true;
-      format.enable = true;
-      format.type = "prettierd";
       lsp.enable = true;
       treesitter.enable = true;
     };

@@ -3,7 +3,7 @@
     enable = true;
 
     mappings = {
-      toggleCurrentLine = "<C-l>"; # ctrl-/
+      toggleCurrentLine = "<C-l>";
     };
   };
 }

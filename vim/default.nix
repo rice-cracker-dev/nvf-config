@@ -1,14 +1,15 @@
 {
   imports = [
+    ./formatter
+    ./lsp
     ./autocomplete.nix
     ./comment.nix
     ./debugger.nix
+    ./diagnostics.nix
     ./filetree.nix
     ./filetypes.nix
     ./git.nix
     ./languages.nix
-    ./lsp.nix
-    ./lspconfig.nix
     ./telescope.nix
     ./theme.nix
     ./treesitter.nix
