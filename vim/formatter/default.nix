@@ -1,7 +1,7 @@
 {
   imports = [
     ./alejandra.nix
-    ./biome.nix
+    #./biome.nix
     ./prettierd.nix
   ];
 
