@@ -1,7 +1,8 @@
 {
   imports = [
-    ./formatter
+    ./comform
     ./lsp
+    ./nvim-lint
     ./autocomplete.nix
     ./comment.nix
     ./debugger.nix

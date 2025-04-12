@@ -1,15 +1,10 @@
-{
+{config, ...}: {
   config.vim.languages = {
-    enableDAP = true;
-    enableExtraDiagnostics = true;
-    enableFormat = true;
-    enableLSP = true;
-    enableTreesitter = true;
-
-    # langauges
+    # languages
     astro = {
       enable = true;
-      extraDiagnostics.enable = true;
+      extraDiagnostics.enable = false; # refers to vim/nvim-lint/linters
+      format.enable = false;
       lsp.enable = true;
       treesitter.enable = true;
     };
@@ -34,6 +29,7 @@
       enable = true;
       lsp.enable = true;
       treesitter.enable = true;
+      format.enable = false;
     };
 
     html = {
@@ -93,7 +89,8 @@
 
     svelte = {
       enable = true;
-      extraDiagnostics.enable = true;
+      extraDiagnostics.enable = false; # refers to vim/nvim-lint/linters
+      format.enable = false;
       lsp.enable = true;
       treesitter.enable = true;
     };
@@ -106,7 +103,8 @@
     ts = {
       enable = true;
       extensions.ts-error-translator.enable = true;
-      extraDiagnostics.enable = true;
+      extraDiagnostics.enable = false; # refers to vim/nvim-lint/linters
+      format.enable = false;
       lsp.enable = true;
       treesitter.enable = true;
     };

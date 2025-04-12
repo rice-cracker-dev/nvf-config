@@ -1,9 +1,5 @@
 {
-  imports = [
-    ./alejandra.nix
-    ./biome.nix
-    ./prettierd.nix
-  ];
+  imports = [./formatters];
 
   config.vim.formatter.conform-nvim = {
     enable = true;
