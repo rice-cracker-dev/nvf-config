@@ -134,15 +134,16 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1744308014,
-        "narHash": "sha256-gbN6v+1be1SrRRbur3GgvDPbv/QMJ5L6keJDMcNGpZ8=",
-        "owner": "NotAShelf",
+        "lastModified": 1744465999,
+        "narHash": "sha256-Z4mhkW2+zKM+LL3IRPxpjfLA9Zq4/PR8KFH9W44YIUY=",
+        "owner": "rice-cracker-dev",
         "repo": "nvf",
-        "rev": "ed31499ad65e97a6210291848aff6dd9f9b137d0",
+        "rev": "a436aca603a0c95b9b085d05ce9593b9afd99c1b",
         "type": "github"
       },
       "original": {
-        "owner": "NotAShelf",
+        "owner": "rice-cracker-dev",
+        "ref": "lint-required-files",
         "repo": "nvf",
         "type": "github"
       }
