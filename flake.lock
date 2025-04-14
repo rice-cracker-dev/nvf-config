@@ -38,11 +38,11 @@
     },
     "mnw": {
       "locked": {
-        "lastModified": 1744497692,
-        "narHash": "sha256-ikWRNR/P/aKCCySZnUfF1W0u0t6rSoJgQgKeDdCBAK8=",
+        "lastModified": 1744592022,
+        "narHash": "sha256-QuWrCRiF3CUM99sgj3gXbIzB1IAVWS5IEfFHadbMA2g=",
         "owner": "Gerg-L",
         "repo": "mnw",
-        "rev": "c5322a2bf74c0066fd15ca35721561397a2e7eab",
+        "rev": "cf9e19413b6c2d995b55565cd99facf9c751b653",
         "type": "github"
       },
       "original": {
@@ -134,11 +134,11 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1744563802,
-        "narHash": "sha256-1r048Rc1HyPFjZArNPLbypEkX0W31Xd9ImJrmSrl87Y=",
+        "lastModified": 1744628512,
+        "narHash": "sha256-9z2furgFFpRIphqpABJrLoGe6hrlOPiDkEleoLYzTSc=",
         "owner": "rice-cracker-dev",
         "repo": "nvf",
-        "rev": "a3051d49aa5f32d9ceab672bad52d591b8a78a8e",
+        "rev": "f830553166bbf38963413c638d9240d71a0ea8bb",
         "type": "github"
       },
       "original": {

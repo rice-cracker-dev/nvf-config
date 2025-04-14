@@ -1,5 +1,5 @@
 {pkgs, ...}: {
-  config.vim.lsp.lspconfig.sources.json = ''
+  config.vim.lsp.lspconfig.sources.jsonls = ''
     lspconfig.jsonls.setup {
       capabilities = capabilities,
       cmd = {

@@ -1,7 +1,8 @@
 {
   imports = [
-    ./json.nix
-    ./qml.nix
+    ./emmet-language-server.nix
+    ./jsonls.nix
+    ./qmlls.nix
   ];
 
   config.vim.lsp = {
