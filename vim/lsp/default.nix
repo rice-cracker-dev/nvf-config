@@ -1,6 +1,6 @@
 {
   imports = [
-    ./emmet-language-server.nix
+    ./emmet_ls.nix
     ./jsonls.nix
     ./qmlls.nix
   ];
