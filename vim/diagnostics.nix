@@ -10,7 +10,7 @@
         };
       };
 
-      update_in_insert = true;
+      update_in_insert = false;
       virtual_lines = true;
     };
   };
