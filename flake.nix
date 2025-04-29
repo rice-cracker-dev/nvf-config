@@ -7,6 +7,7 @@
 
   outputs = {
     nixpkgs,
+    flake-utils,
     nvf,
     ...
   }: flake-utils.lib.eachDefaultSystem (system: let
