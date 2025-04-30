@@ -12,6 +12,7 @@
     ./git.nix
     ./languages.nix
     ./telescope.nix
+    ./terminal.nix
     ./theme.nix
     ./treesitter.nix
     ./ui.nix
@@ -71,12 +72,6 @@
         cycleNext = "<leader>e";
         cyclePrevious = "<leader>q";
       };
-    };
-
-    terminal.toggleterm = {
-      enable = true;
-      lazygit.enable = true;
-      setupOpts.direction = "float";
     };
   };
 }
