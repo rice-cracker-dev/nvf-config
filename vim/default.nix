@@ -24,7 +24,6 @@
     enableLuaLoader = true;
     syntaxHighlighting = true;
     lineNumberMode = "relNumber";
-    useSystemClipboard = true;
     viAlias = true;
     vimAlias = true;
     preventJunkFiles = true;
@@ -43,6 +42,12 @@
       autoindent = true;
 
       mouse = ""; # disable mouse
+    };
+
+    clipboard = {
+      enable = true;
+      providers.wl-copy.enable = true;
+      registers = "unnamedplus";
     };
 
     autopairs.nvim-autopairs = {
