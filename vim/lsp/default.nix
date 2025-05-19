@@ -7,7 +7,7 @@
 
   config.vim.lsp = {
     enable = true;
-    formatOnSave = false;
+    formatOnSave = true;
 
     lightbulb.enable = false;
     lspconfig.enable = true;
