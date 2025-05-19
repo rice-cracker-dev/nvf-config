@@ -1,6 +1,6 @@
 {
   imports = [
-    ./comform
+    ./conform
     ./lsp
     ./nvim-lint
     ./autocomplete.nix

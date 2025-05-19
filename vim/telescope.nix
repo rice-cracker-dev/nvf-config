@@ -14,7 +14,7 @@
           "result/"
         ];
       };
-    
+
       pickers.find_files.hidden = true;
     };
   };
