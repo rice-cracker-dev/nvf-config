@@ -3,6 +3,7 @@
     ./emmet_ls.nix
     ./jsonls.nix
     ./qmlls.nix
+    ./tailwindcss.nix
   ];
 
   config.vim.lsp = {
