@@ -32,6 +32,11 @@
       format.enable = false;
     };
 
+    csharp = {
+      enable = true;
+      treesitter.enable = true;
+    };
+
     html = {
       enable = true;
       treesitter.enable = true;
