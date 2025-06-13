@@ -9,7 +9,7 @@
       pkgs.vimPlugins.nvim-treesitter.builtGrammars.qmljs
     ];
 
-    context.enable = true;
+    context.enable = false;
     highlight.enable = true;
     indent.enable = true;
   };
