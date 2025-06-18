@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   config.vim.telescope = {
     enable = true;
     setupOpts = {
@@ -15,7 +15,10 @@
         ];
       };
 
-      pickers.find_files.hidden = true;
+      pickers.find_files = {
+        hidden = true;
+        find_command = ["${pkgs.fd}/bin/fd" "--type=file" "--hidden"];
+      };
     };
   };
 }
