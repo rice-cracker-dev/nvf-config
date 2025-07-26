@@ -1,14 +1,5 @@
 {
   config.vim.languages = {
-    # languages
-    astro = {
-      enable = true;
-      extraDiagnostics.enable = false; # refers to vim/nvim-lint/linters
-      format.enable = false;
-      lsp.enable = true;
-      treesitter.enable = true;
-    };
-
     bash = {
       enable = true;
       extraDiagnostics.enable = true;
@@ -87,31 +78,6 @@
     sql = {
       enable = true;
       extraDiagnostics.enable = true;
-      format.enable = true;
-      lsp.enable = true;
-      treesitter.enable = true;
-    };
-
-    svelte = {
-      enable = true;
-      extraDiagnostics.enable = false; # refers to vim/nvim-lint/linters
-      format.enable = false;
-      lsp.enable = true;
-      treesitter.enable = true;
-    };
-
-    ts = {
-      enable = true;
-      extensions.ts-error-translator.enable = true;
-      extraDiagnostics.enable = false; # refers to vim/nvim-lint/linters
-      format.enable = false;
-      lsp.enable = true;
-      treesitter.enable = true;
-    };
-
-    typst = {
-      enable = true;
-      extensions.typst-preview-nvim.enable = true;
       format.enable = true;
       lsp.enable = true;
       treesitter.enable = true;

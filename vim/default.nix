@@ -1,7 +1,7 @@
 {
   imports = [
     ./conform
-    ./lsp
+    ./languages
     ./nvim-lint
     ./autocomplete.nix
     ./comment.nix

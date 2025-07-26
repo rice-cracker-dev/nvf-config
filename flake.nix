@@ -3,6 +3,12 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
     nvf.url = "github:NotAShelf/nvf";
+
+    # plugins
+    ts-error-translator = {
+      url = "github:dmmulroy/ts-error-translator.nvim";
+      flake = false;
+    };
   };
 
   outputs = {
@@ -17,11 +23,10 @@
       ];
 
       perSystem = {pkgs, ...}: let
-        configModule = import ./configuration.nix;
-
         customNeovim = nvf.lib.neovimConfiguration {
-          modules = [configModule];
           inherit pkgs;
+          extraSpecialArgs = {inherit inputs;};
+          modules = [./configuration.nix];
         };
       in {
         packages.default = customNeovim.neovim;
