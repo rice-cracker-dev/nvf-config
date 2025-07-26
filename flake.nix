@@ -13,6 +13,7 @@
 
   outputs = {
     flake-parts,
+    ts-error-translator,
     nvf,
     ...
   } @ inputs:
@@ -25,8 +26,10 @@
       perSystem = {pkgs, ...}: let
         customNeovim = nvf.lib.neovimConfiguration {
           inherit pkgs;
-          extraSpecialArgs = {inherit inputs;};
           modules = [./configuration.nix];
+          extraSpecialArgs = {
+            inherit ts-error-translator;
+          };
         };
       in {
         packages.default = customNeovim.neovim;
