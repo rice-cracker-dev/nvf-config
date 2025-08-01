@@ -34,10 +34,6 @@
     projects.project-nvim.enable = true;
     globals.editorconfig = true;
 
-    luaConfigRC.server-pipe = ''
-      vim.fn.serverstart("/tmp/server.pipe")
-    '';
-
     options = {
       tabstop = 2;
       shiftwidth = 2;
