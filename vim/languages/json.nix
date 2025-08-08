@@ -12,6 +12,9 @@ in {
     ];
 
     lsp.servers.jsonls = {
+      capabilities = mkLuaInline "capabilities";
+      on_attach = mkLuaInline "attach_keymaps";
+
       cmd = [
         "${pkgs.vscode-langservers-extracted}/bin/vscode-json-language-server"
         "--stdio"
