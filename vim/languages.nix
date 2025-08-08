@@ -16,12 +16,12 @@
       treesitter.enable = true;
     };
 
-    css = {
-      enable = true;
-      lsp.enable = true;
-      treesitter.enable = true;
-      format.enable = false;
-    };
+    #css = {
+    #  enable = true;
+    #  lsp.enable = true;
+    #  treesitter.enable = true;
+    #  format.enable = false;
+    #};
 
     csharp = {
       enable = true;

@@ -12,7 +12,7 @@ in {
 
     lsp.servers.qmlls = {
       capabilities = mkLuaInline "capabilities";
-      on_attach = mkLuaInline "attach_keymaps";
+      on_attach = mkLuaInline "default_on_attach";
       cmd = ["${pkgs.kdePackages.qtdeclarative}/bin/qmlls" "-E"];
     };
 

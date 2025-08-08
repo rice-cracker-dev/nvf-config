@@ -12,7 +12,7 @@ in {
 
     lsp.servers.svelte = {
       capabilities = mkLuaInline "capabilities";
-      on_attach = mkLuaInline "attach_keymaps";
+      on_attach = mkLuaInline "default_on_attach";
       cmd = ["${pkgs.svelte-language-server}/bin/svelteserver" "--stdio"];
     };
   };

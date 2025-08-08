@@ -14,12 +14,7 @@ in {
 
     lsp.servers.ts_ls = {
       capabilities = mkLuaInline "capabilities";
-      on_attach = mkLuaInline ''
-        function(client, bufnr)
-          attach_keymaps(client, bufnr);
-          client.server_capabilities.documentFormattingProvider = false;
-        end
-      '';
+      on_attach = mkLuaInline "default_on_attach";
       cmd = ["${pkgs.typescript-language-server}/bin/typescript-language-server" "--stdio"];
     };
   };

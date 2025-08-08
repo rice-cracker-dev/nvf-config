@@ -7,12 +7,16 @@
 in {
   config.vim = {
     treesitter.grammars = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
-      gdscript
+      css
+      scss
+      less
+      sass
     ];
 
-    lsp.servers.gdscript = {
+    lsp.servers.tailwindcss = {
       capabilities = mkLuaInline "capabilities";
       on_attach = mkLuaInline "default_on_attach";
+      cmd = ["${pkgs.tailwindcss-language-server}/bin/tailwindcss-language-server" "--stdio"];
     };
   };
 }
