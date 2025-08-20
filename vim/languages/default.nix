@@ -4,6 +4,7 @@
     ./bash.nix
     ./css.nix
     ./gdscript.nix
+    ./html.nix
     ./json.nix
     ./qml.nix
     ./svelte.nix
