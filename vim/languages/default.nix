@@ -1,6 +1,7 @@
 {
   imports = [
     ./astro.nix
+    ./bash.nix
     ./css.nix
     ./gdscript.nix
     ./json.nix

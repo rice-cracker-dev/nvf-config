@@ -3,5 +3,6 @@
     ./alejandra.nix
     ./biome.nix
     ./prettierd.nix
+    ./shfmt.nix
   ];
 }

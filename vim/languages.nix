@@ -1,13 +1,5 @@
 {
   config.vim.languages = {
-    bash = {
-      enable = true;
-      extraDiagnostics.enable = true;
-      format.enable = true;
-      lsp.enable = true;
-      treesitter.enable = true;
-    };
-
     clang = {
       enable = true;
       cHeader = true;
@@ -15,13 +7,6 @@
       lsp.enable = true;
       treesitter.enable = true;
     };
-
-    #css = {
-    #  enable = true;
-    #  lsp.enable = true;
-    #  treesitter.enable = true;
-    #  format.enable = false;
-    #};
 
     csharp = {
       enable = true;
