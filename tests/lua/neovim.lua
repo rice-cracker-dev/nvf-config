@@ -1,7 +1,9 @@
 local hello = "world"
 
-vim.print() -- vim global
+vim.print(hello) -- vim global
 
 local function styluaTest()
-	print("hi")
+	print(hello)
 end
+
+styluaTest()
