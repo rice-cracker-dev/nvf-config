@@ -1,3 +1,3 @@
 {
-  imports = [./eslint_d.nix ./shellcheck.nix];
+  imports = [./eslint_d.nix ./markdownlint.nix ./shellcheck.nix];
 }
