@@ -4,5 +4,6 @@
     ./biome.nix
     ./prettierd.nix
     ./shfmt.nix
+    ./stylua.nix
   ];
 }

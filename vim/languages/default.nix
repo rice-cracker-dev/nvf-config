@@ -6,6 +6,7 @@
     ./gdscript.nix
     ./html.nix
     ./json.nix
+    ./lua.nix
     ./markdown.nix
     ./qml.nix
     ./svelte.nix

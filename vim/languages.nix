@@ -1,12 +1,5 @@
 {
   config.vim.languages = {
-    lua = {
-      enable = true;
-      lsp.enable = true;
-      lsp.lazydev.enable = true;
-      treesitter.enable = true;
-    };
-
     nix = {
       enable = true;
       extraDiagnostics.enable = true;
