@@ -7,12 +7,6 @@
       treesitter.enable = true;
     };
 
-    markdown = {
-      enable = true;
-      lsp.enable = true;
-      treesitter.enable = true;
-    };
-
     nix = {
       enable = true;
       extraDiagnostics.enable = true;
@@ -23,27 +17,6 @@
     python = {
       enable = true;
       dap.enable = true;
-      format.enable = true;
-      lsp.enable = true;
-      treesitter.enable = true;
-    };
-
-    rust = {
-      enable = true;
-      dap.enable = true;
-      format.enable = true;
-      lsp.enable = true;
-      treesitter.enable = true;
-
-      crates = {
-        enable = true;
-        codeActions = true;
-      };
-    };
-
-    sql = {
-      enable = true;
-      extraDiagnostics.enable = true;
       format.enable = true;
       lsp.enable = true;
       treesitter.enable = true;
