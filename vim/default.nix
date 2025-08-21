@@ -10,7 +10,6 @@
     ./filetree.nix
     ./filetypes.nix
     ./git.nix
-    ./languages.nix
     ./telescope.nix
     ./terminal.nix
     ./theme.nix

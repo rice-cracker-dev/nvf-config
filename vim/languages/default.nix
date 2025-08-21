@@ -9,6 +9,7 @@
     ./lua.nix
     ./markdown.nix
     ./nix.nix
+    ./python.nix
     ./qml.nix
     ./svelte.nix
     ./ts.nix
