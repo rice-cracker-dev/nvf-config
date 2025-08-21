@@ -8,6 +8,7 @@
     ./json.nix
     ./lua.nix
     ./markdown.nix
+    ./nix.nix
     ./qml.nix
     ./svelte.nix
     ./ts.nix

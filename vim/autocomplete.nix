@@ -1,9 +1,11 @@
-{
+{lib, ...}: let
+  inherit (lib) mkForce;
+in {
   config.vim.autocomplete.blink-cmp = {
     enable = true;
 
     setupOpts.sources = {
-      default = [
+      default = mkForce [
         "lazydev"
         "lsp"
         "path"
