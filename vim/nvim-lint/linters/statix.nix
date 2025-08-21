@@ -6,7 +6,7 @@
   inherit (lib.meta) getExe;
 in {
   config.vim.diagnostics.nvim-lint = {
-    linters.shellcheck.cmd = getExe pkgs.shellcheck;
-    linters_by_ft.sh = ["shellcheck"];
+    linters.statix.cmd = getExe pkgs.statix;
+    linters_by_ft.nix = ["statix"];
   };
 }
