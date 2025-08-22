@@ -47,13 +47,16 @@ in {
         list.selection = {
           preselect = false;
           auto_insert = false;
+        };
+
+        list.trigger = {
           show_on_insert = true;
           show_on_backspace = true;
           show_on_backspace_in_keyword = true;
         };
 
         menu.draw.columns = mkLuaInline ''
-          { { 'kind_icon', 'kind', gap = 1 }, { 'label', 'label_description', gap = 1 } }
+          { { 'kind_icon' }, { 'kind' }, { 'label', 'label_description', gap = 1 } }
         '';
       };
 
