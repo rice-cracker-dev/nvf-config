@@ -2,10 +2,10 @@
   imports = [
     ./conform
     ./languages
+    ./nvim-dap
     ./nvim-lint
     ./autocomplete.nix
     ./comment.nix
-    ./debugger.nix
     ./diagnostics.nix
     ./filetree.nix
     ./filetypes.nix

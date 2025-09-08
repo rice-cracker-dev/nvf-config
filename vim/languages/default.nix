@@ -2,6 +2,7 @@
   imports = [
     ./astro.nix
     ./bash.nix
+    ./cpp.nix
     ./css.nix
     ./gdscript.nix
     ./html.nix
