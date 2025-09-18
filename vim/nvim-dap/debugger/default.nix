@@ -1,5 +1,5 @@
 {
   imports = [
-    ./lldb.nix
+    ./codelldb.nix
   ];
 }

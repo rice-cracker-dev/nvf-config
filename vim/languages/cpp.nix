@@ -28,5 +28,47 @@ in {
       '';
       cmd = ["${pkgs.clang-tools}/bin/clangd"];
     };
+
+    overseer.templates = [
+      {
+        name = "clang++ build (debug)";
+        builder = mkLuaInline ''
+          function()
+            local vars = require("overseer.template.vscode.variables").precalculate_vars()
+
+            return {
+              cmd = { "clang++" },
+              args = {
+                "-std=c++20",
+                "-glldb",
+                "-fstandalone-debug",
+                vars.relativeFile,
+                "-o", vars.fileBasenameNoExtension
+              },
+              components = { { "on_output_quickfix", open = true }, "default" },
+            }
+          end
+        '';
+        condition = {
+          filetype = ["cpp"];
+        };
+      }
+      {
+        name = "clang++ clean (debug)";
+        builder = mkLuaInline ''
+          function()
+            local vars = require("overseer.template.vscode.variables").precalculate_vars()
+
+            return {
+              cmd = { "rm" },
+              args = { vars.fileBasenameNoExtension }
+            }
+          end
+        '';
+        condition = {
+          filetype = ["cpp"];
+        };
+      }
+    ];
   };
 }
