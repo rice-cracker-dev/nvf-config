@@ -7,7 +7,6 @@
     ./autocomplete.nix
     ./comment.nix
     ./diagnostics.nix
-    ./filetree.nix
     ./filetypes.nix
     ./git.nix
     ./telescope.nix

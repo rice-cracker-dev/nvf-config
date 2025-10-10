@@ -6,7 +6,6 @@ in {
   config.vim = {
     diagnostics.nvim-lint = {
       enable = true;
-      lint_after_save = false; # use my own implementation until upstream improves
     };
 
     augroups = [{name = "nvf-config-lint";}];
