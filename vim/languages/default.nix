@@ -14,6 +14,7 @@
     ./qml.nix
     ./svelte.nix
     ./ts.nix
+    ./yaml.nix
   ];
 
   config.vim.lsp = {
