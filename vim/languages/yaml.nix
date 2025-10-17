@@ -15,7 +15,7 @@ in {
       on_attach = mkLuaInline "default_on_attach";
 
       cmd = [
-        "${pkgs.vscode-langservers-extracted}/bin/vscode-json-language-server"
+        "${pkgs.yaml-language-server}/bin/yaml-language-server"
         "--stdio"
       ];
 
