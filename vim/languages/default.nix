@@ -4,6 +4,7 @@
     ./bash.nix
     ./cpp.nix
     ./css.nix
+    ./docker.nix
     ./gdscript.nix
     ./html.nix
     ./json.nix

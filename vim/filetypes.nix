@@ -14,7 +14,9 @@
       },
 
       pattern = {
-        ['%.env%.[%w_.-]+'] = 'dotenv'
+        ['%.env%.[%w_.-]+'] = 'dotenv',
+        ["compose.*%.ya?ml"] = "yaml.docker-compose",
+        ["docker%-compose.*%.ya?ml"] = "yaml.docker-compose"
       }
     })
   '';
