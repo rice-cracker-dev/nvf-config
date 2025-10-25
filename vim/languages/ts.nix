@@ -8,6 +8,7 @@ in {
   config.vim = {
     treesitter.grammars = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
       typescript
+      tsx
       javascript
       jsdoc
     ];

@@ -4,17 +4,18 @@
       extension = {
         ejs = "html",
         conf = "conf",
-        env = dotenv
+        env = "dotenv"
       },
 
       filename = {
         [".env"] = "dotenv",
         [".envrc"] = "direnv",
-        ["tsconfig.json"] = "jsonc"
+        ["tsconfig.json"] = "jsonc",
+        [".prettierrc"] = "json"
       },
 
       pattern = {
-        ['%.env%.[%w_.-]+'] = 'dotenv',
+        ["%.env%.[%w_.-]+"] = "dotenv",
         ["compose.*%.ya?ml"] = "yaml.docker-compose",
         ["docker%-compose.*%.ya?ml"] = "yaml.docker-compose"
       }

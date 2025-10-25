@@ -33,7 +33,12 @@
         };
       in {
         packages.default = customNeovim.neovim;
-        formatter = pkgs.alejandra;
+
+        formatter = pkgs.writeShellApplication {
+          name = "alejandra";
+          runtimeInputs = [pkgs.alejandra];
+          text = "alejandra .";
+        };
       };
     };
 }

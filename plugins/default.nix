@@ -8,5 +8,6 @@
     ./schema-store.nix
     ./ts-error-translator.nix
     ./vim-be-good.nix
+    ./yats-vim.nix
   ];
 }
