@@ -12,6 +12,7 @@
     ./telescope.nix
     ./terminal.nix
     ./theme.nix
+    ./therock.nix
     ./treesitter.nix
     ./ui.nix
     ./utility.nix
