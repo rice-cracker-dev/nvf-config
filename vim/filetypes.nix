@@ -4,7 +4,8 @@
       extension = {
         ejs = "html",
         conf = "conf",
-        env = "dotenv"
+        env = "dotenv",
+        hbs = "html"
       },
 
       filename = {
