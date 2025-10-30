@@ -17,6 +17,7 @@ in {
       capabilities = mkLuaInline "capabilities";
       on_attach = mkLuaInline "default_on_attach";
       cmd = ["${pkgs.typescript-language-server}/bin/typescript-language-server" "--stdio"];
+      settings.preferences.quotePreference = "single";
     };
   };
 }

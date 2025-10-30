@@ -64,7 +64,6 @@ in {
         default = mkForce [
           "lazydev"
           "lsp"
-          "path"
           "snippets"
           "buffer"
         ];
