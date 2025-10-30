@@ -6,6 +6,7 @@
     ./css.nix
     ./docker.nix
     ./gdscript.nix
+    ./handlebars.nix
     ./html.nix
     ./json.nix
     ./lua.nix
