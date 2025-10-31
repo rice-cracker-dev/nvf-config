@@ -13,11 +13,22 @@
           "target/"
           "result/"
         ];
+
+        vimgrep_arguments = [
+          "${pkgs.ripgrep}/bin/rg"
+          "--color=never"
+          "--no-heading"
+          "--with-filename"
+          "--line-number"
+          "--column"
+          "--smart-case"
+          "--trim"
+        ];
       };
 
       pickers.find_files = {
         hidden = true;
-        find_command = ["${pkgs.fd}/bin/fd" "--type=file" "--hidden"];
+        find_command = ["${pkgs.fd}/bin/fd" "--type=file" "-H" "-I"];
       };
     };
   };

@@ -82,11 +82,11 @@
     };
 
     tabline.nvimBufferline = {
-      enable = false;
+      enable = true;
 
       mappings = {
-        cycleNext = "<leader>e";
-        cyclePrevious = "<leader>q";
+        cycleNext = "<c-tab>";
+        cyclePrevious = "<cs-tab>";
       };
     };
   };
