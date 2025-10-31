@@ -66,6 +66,19 @@
       enable = true;
       globalStatus = true;
       icons.enable = true;
+
+      activeSection.x = [
+        ''
+          {
+            function()
+              return require('direnv').statusline()
+            end,
+            'encoding',
+            'fileformat',
+            'filetype',
+          }
+        ''
+      ];
     };
 
     tabline.nvimBufferline = {

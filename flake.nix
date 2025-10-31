@@ -9,17 +9,24 @@
       url = "github:dmmulroy/ts-error-translator.nvim";
       flake = false;
     };
+
+    direnv-nvim = {
+      url = "github:NotAShelf/direnv.nvim";
+      flake = false;
+    };
   };
 
   outputs = {
     flake-parts,
     ts-error-translator,
+    direnv-nvim,
     nvf,
     ...
   } @ inputs:
     flake-parts.lib.mkFlake {inherit inputs;} {
       systems = [
         # only tested on x86_64-linux, if other platforms work, please send a PR
+        # or open an issue
         "x86_64-linux"
       ];
 
@@ -28,7 +35,7 @@
           inherit pkgs;
           modules = [./configuration.nix];
           extraSpecialArgs = {
-            inherit ts-error-translator;
+            inherit ts-error-translator direnv-nvim;
           };
         };
       in {

@@ -1,5 +1,6 @@
 {
   imports = [
+    ./copilot.nix # haha vibe coding goes brrrr
     ./direnv.nix
     ./html-ts-autotag.nix
     ./nvim-dap-python.nix

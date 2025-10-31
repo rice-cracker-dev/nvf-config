@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "direnv-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1749467049,
+        "narHash": "sha256-KqO8uDbVy4sVVZ6mHikuO+SWCzWr97ZuFRC8npOPJIE=",
+        "owner": "NotAShelf",
+        "repo": "direnv.nvim",
+        "rev": "4dfc8758a1deab45e37b7f3661e0fd3759d85788",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NotAShelf",
+        "repo": "direnv.nvim",
+        "type": "github"
+      }
+    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -141,6 +157,7 @@
     },
     "root": {
       "inputs": {
+        "direnv-nvim": "direnv-nvim",
         "flake-parts": "flake-parts",
         "nixpkgs": "nixpkgs",
         "nvf": "nvf",

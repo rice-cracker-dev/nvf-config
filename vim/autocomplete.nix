@@ -44,15 +44,23 @@ in {
       };
 
       completion = {
-        list.selection = {
-          preselect = false;
-          auto_insert = false;
+        list = {
+          selection = {
+            preselect = true;
+            auto_insert = false;
+          };
+
+          trigger = {
+            show_on_insert = true;
+            show_on_backspace = true;
+            show_on_backspace_in_keyword = true;
+          };
         };
 
-        list.trigger = {
-          show_on_insert = true;
-          show_on_backspace = true;
-          show_on_backspace_in_keyword = true;
+        ghost_text = {
+          enabled = true;
+          auto_show = true;
+          show_with_menu = true;
         };
 
         menu.draw.columns = mkLuaInline ''
@@ -62,6 +70,7 @@ in {
 
       sources = {
         default = mkForce [
+          "copilot"
           "lsp"
           "path"
           "snippets"
@@ -69,7 +78,14 @@ in {
         ];
 
         providers = {
-          lsp.score_offset = 10;
+          copilot = {
+            name = "copilot";
+            module = "blink-copilot";
+            score_offset = 200;
+            async = true;
+          };
+
+          lsp.score_offset = 100;
         };
       };
     };
