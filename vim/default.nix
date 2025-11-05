@@ -9,9 +9,9 @@
     ./diagnostics.nix
     ./filetypes.nix
     ./git.nix
+    ./tabline.nix
     ./telescope.nix
     ./terminal.nix
-    ./theme.nix
     ./treesitter.nix
     ./ui.nix
     ./utility.nix
@@ -39,7 +39,9 @@
       autoindent = true;
       exrc = true;
       secure = true;
-      mouse = ""; # disable mouse
+      mouse = "";
+      winborder = "solid";
+      ignorecase = true;
     };
 
     clipboard = {
@@ -79,15 +81,6 @@
           }
         ''
       ];
-    };
-
-    tabline.nvimBufferline = {
-      enable = true;
-
-      mappings = {
-        cycleNext = "<c-tab>";
-        cyclePrevious = "<cs-tab>";
-      };
     };
   };
 }

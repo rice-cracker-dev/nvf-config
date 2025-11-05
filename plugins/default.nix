@@ -1,5 +1,6 @@
 {
   imports = [
+    ./catppuccin.nix
     ./copilot.nix # haha vibe coding goes brrrr
     ./direnv.nix
     ./html-ts-autotag.nix
