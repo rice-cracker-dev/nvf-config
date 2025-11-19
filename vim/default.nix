@@ -1,4 +1,6 @@
-{
+{lib, ...}: let
+  inherit (lib.lists) concatMap;
+in {
   imports = [
     ./conform
     ./languages
@@ -43,6 +45,19 @@
       winborder = "solid";
       ignorecase = true;
     };
+
+    keymaps = concatMap (mode: let
+      mkKey = key: {
+        inherit mode key;
+        action = "<Nop>";
+        noremap = true;
+      };
+    in [
+      (mkKey "<Up>")
+      (mkKey "<Down>")
+      (mkKey "<Left>")
+      (mkKey "<Right>")
+    ]) ["n" "i"];
 
     clipboard = {
       enable = true;
