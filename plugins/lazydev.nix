@@ -10,6 +10,8 @@
           words = ["vim%.uv"];
         }
       ];
+
+      integrations.lspconfig = true;
     };
   };
 }

@@ -71,6 +71,7 @@ in {
       sources = {
         default = mkForce [
           "copilot"
+          "lazydev"
           "lsp"
           "path"
           "snippets"
@@ -83,6 +84,12 @@ in {
             module = "blink-copilot";
             score_offset = 200;
             async = true;
+          };
+
+          lazydev = {
+            name = "LazyDev";
+            module = "lazydev.integrations.blink";
+            score_offset = 150;
           };
 
           lsp.score_offset = 100;

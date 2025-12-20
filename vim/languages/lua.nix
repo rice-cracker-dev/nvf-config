@@ -14,6 +14,10 @@ in {
       capabilities = mkLuaInline "capabilities";
       on_attach = mkLuaInline "default_on_attach";
       cmd = ["${pkgs.lua-language-server}/bin/lua-language-server"];
+
+      settings = {
+        Lua.diagnostics.globals = ["vim"];
+      };
     };
   };
 }
